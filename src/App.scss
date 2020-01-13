@@ -1,3 +1,9 @@
+$tan: #DAAE91;
+$dark-olive: #5D3D2A;
+$dark-grey: #A59891;
+$black: #22211D;
+$old-rose: #612F5B;
+
 .App {
   text-align: center;
 }
@@ -14,18 +20,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: $dark-grey;
 }
 
 .App-link {
-  color: #61dafb;
+  color: $old-rose;
 }
 
 @keyframes App-logo-spin {
