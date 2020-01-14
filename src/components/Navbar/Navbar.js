@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const Header = () => {
+export const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
-        <li>
+        <li className="navbar-item">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className="navbar-item">
           <Link to="/About">About</Link>
         </li>
       </ul>

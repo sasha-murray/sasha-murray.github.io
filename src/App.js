@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.scss';
+import './styles/main.scss';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Header } from './components/Header/Header';
+import { Navbar } from './components/Navbar/Navbar';
 import { Home } from './pages/Home/Home';
 import { About } from './pages/About/About';
 
 function App() {
   return (
     <Router>
-      <Header />
+      <Navbar />
       <Switch>
         <Route path="/about">
           <About />
