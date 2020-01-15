@@ -7,12 +7,18 @@ export const Footer = () => {
   return (
     <footer>
       <div className="left">
-      <p> &copy; 2020 Sasha Murray</p>
+        <p> &copy; 2020 Sasha Murray</p>
       </div>
       <div className="socials right">
-        <LinkedIn className="svg" />
-        <Github className="svg" />
-        <Gmail className="svg" />
+        <a href="https://www.linkedin.com/in/sasha-jacnj-murray/">
+          <LinkedIn className="svg" />
+        </a>
+        <a href="https://github.com/sasha-murray">
+          <Github className="svg" />
+        </a>
+        <a href="mailto:sasha.murray@appliedtechnology.se">
+          <Gmail className="svg" />
+        </a>
       </div>
     </footer>
   )
