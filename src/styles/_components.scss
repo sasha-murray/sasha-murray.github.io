@@ -1,11 +1,19 @@
 .navbar {
   overflow: hidden;
-  background-color: $black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $secondary;
+  box-shadow: 0 2px 5px $secondary;
   .navbar-item {
+    .active {
+      color: $quarternary;
+      border-bottom: 1px solid $quarternary;
+    }
     float: left;
     a {
       display: block;
-      color: $dark-grey;
+      color: $quinternary;
       text-align: center;
       padding: 14px 16px;
       font-size: 1.6rem;
