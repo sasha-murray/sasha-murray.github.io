@@ -3,35 +3,46 @@ import me from '../../assets/me.jpeg'
 
 
 export const About = () => {
+  const myAge = () => {
+    const birthday = new Date('1996-12-11T06:50:00')
+    const ageInMS = Date.now() - birthday
+    const ageDate = new Date(ageInMS)
+    return Math.abs(ageDate.getUTCFullYear() - 1970)
+  }
+  const nerdLink = 'https://slackprop.wordpress.com/2013/06/03/on-geek-versus-nerd/'
   return (
     <div className="container">
       <article className="about">
-        <section>
-          <header className="header">
+        <header className="header about">
+          <div>
             <h1>About Me</h1>
-            <p>With a background in maths, linguistics and logic, development seemed like the best way to combine my passion for problem-solving with my creative side.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, natus. Quo est cupiditate vitae impedit?</p>
-          </header>
+            <p>My name is Sasha, I'm a {myAge()}-year-old developer and nerd/geek - <a href={nerdLink}> you name it</a></p>
+            <p>With a background in maths, linguistics and logic, coding seemed like the best way to combine my passion for problem-solving with my creative side.</p>
+          </div>
           <figure className="portrait" >
             <img src={me} alt="portrait of Sasha" />
           </figure>
+        </header>
+        <br/>
+        <div className="list about">
           <header className="header">
-            <h2>Skills</h2>
+            <h2>Skills and Technologies</h2>
+          </header>
+          <div>
+            <h3>Skills</h3>
             <ul>
               <li>Agile</li>
               <li>TDD (Test-Driven Development)</li>
               <li>Mob programming</li>
               <li>Algorithms and Data Structures</li>
-              <li>Pedagogy</li>
-              <li>Problem solving</li>
               <li>Cryptology</li>
-              <li>Linguistics</li>
+              <li>Computational Linguistics</li>
               <li>Dynamic Logic</li>
               <li>Machine Learning</li>
-              <li>Natural Language Processing (NLP)</li>
             </ul>
-            <h2>Technologies</h2>
-            <p>Front-end</p>
+          </div>
+          <div>
+            <h3>Front-end</h3>
             <ul>
               <li>Semantic HTML</li>
               <li>TypeScript</li>
@@ -47,7 +58,9 @@ export const About = () => {
               <li>WebPack</li>
               <li>jQuery</li>
             </ul>
-            <p>Back-end</p>
+          </div>
+          <div>
+            <h3>Back-end</h3>
             <ul>
               <li>Node.js</li>
               <li>Websockets</li>
@@ -66,20 +79,8 @@ export const About = () => {
               <li>ElasticSearch</li>
               <li>Apache</li>
             </ul>
-          </header>
-
-        </section>
-        <br />
-        <section>
-          <header className="header">
-            <h1>About this website</h1>
-            <h2>Semantic HTML is the future</h2>
-          </header>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate mollitia provident cum ratione molestiae, officia ea. Ab vel quam consectetur quo expedita delectus et officiis exercitationem magnam dolores, odio molestias.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit porro aspernatur dicta est at exercitationem aliquid consequatur, atque error, odio esse, quas doloremque consequuntur quo necessitatibus. Eveniet illum voluptatum architecto.</p>
-          <p>Beatae reiciendis mollitia tempore saepe, error quo laudantium odio quod, quibusdam nam voluptates! Unde, quasi laudantium. Laborum amet nihil eos illum debitis cumque animi magni modi labore alias, quod temporibus.</p>
-          <p>Ullam recusandae architecto in accusamus nobis unde, harum odit pariatur modi. Distinctio nisi ex, earum tempora eos molestiae ab harum accusantium alias sit quos vitae possimus eius assumenda temporibus in.</p>
-        </section>
+          </div>
+        </div>
       </article>
     </div>
   )

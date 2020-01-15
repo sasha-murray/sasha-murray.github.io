@@ -5,6 +5,15 @@
   flex-direction: row;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  .list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    .header {
+      grid-column: 1 / 5;
+    }
+  }
   
   article {
     padding: 15px;
@@ -12,6 +21,9 @@
     color: $secondary;
 
     .header {
+      &.about {
+        display: flex;
+      }
       h1 {
       color: $primary;
       font-size: 2.8rem;
