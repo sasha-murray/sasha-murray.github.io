@@ -9,16 +9,67 @@ export const About = () => {
         <section>
           <header className="header">
             <h1>About Me</h1>
-            <h2>I also like philosophy and books and maths and stuff</h2>
+            <p>With a background in maths, linguistics and logic, development seemed like the best way to combine my passion for problem-solving with my creative side.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, natus. Quo est cupiditate vitae impedit?</p>
           </header>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio culpa ad, nulla fuga expedita quia sed tempora ipsa laudantium voluptate rerum possimus accusantium perferendis eveniet ducimus repellendus exercitationem obcaecati sunt!</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At inventore quos ut temporibus assumenda consequatur esse quam dicta, quidem eius doloribus aliquid fugit culpa voluptate, ad enim nesciunt minima beatae vel, provident labore accusamus praesentium fuga accusantium! Reiciendis, quae nesciunt.</p>
           <figure className="portrait" >
-      <img src={me} alt="portrait of Sasha" />
-     </figure>
+            <img src={me} alt="portrait of Sasha" />
+          </figure>
+          <header className="header">
+            <h2>Skills</h2>
+            <ul>
+              <li>Agile</li>
+              <li>TDD (Test-Driven Development)</li>
+              <li>Mob programming</li>
+              <li>Algorithms and Data Structures</li>
+              <li>Pedagogy</li>
+              <li>Problem solving</li>
+              <li>Cryptology</li>
+              <li>Linguistics</li>
+              <li>Dynamic Logic</li>
+              <li>Machine Learning</li>
+              <li>Natural Language Processing (NLP)</li>
+            </ul>
+            <h2>Technologies</h2>
+            <p>Front-end</p>
+            <ul>
+              <li>Semantic HTML</li>
+              <li>TypeScript</li>
+              <li>Socket.io</li>
+              <li>CSS3</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Jest</li>
+              <li>Enzyme</li>
+              <li>Mocha</li>
+              <li>Redux</li>
+              <li>Babel</li>
+              <li>WebPack</li>
+              <li>jQuery</li>
+            </ul>
+            <p>Back-end</p>
+            <ul>
+              <li>Node.js</li>
+              <li>Websockets</li>
+              <li>WebRTC</li>
+              <li>REST</li>
+              <li>Mocha</li>
+              <li>Express.js</li>
+              <li>Google Cloud Platform</li>
+              <li>AWS</li>
+              <li>SQL</li>
+              <li>Postgres</li>
+              <li>MongoDB</li>
+              <li>JWT</li>
+              <li>OAuth</li>
+              <li>Auth0</li>
+              <li>ElasticSearch</li>
+              <li>Apache</li>
+            </ul>
+          </header>
+
         </section>
-        <br/>
+        <br />
         <section>
           <header className="header">
             <h1>About this website</h1>
