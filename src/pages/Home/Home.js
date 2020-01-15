@@ -15,7 +15,9 @@ export const Home = () => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur dolorum fuga recusandae neque voluptates praesentium ea blanditiis earum delectus quod. Quos aut tempora qui quam minima. Similique at veritatis inventore excepturi consequuntur reiciendis voluptate molestiae perspiciatis totam magnam eos laborum minus amet, quas culpa cupiditate! Ex non illo quos labore!
         </p>
       </article>
-      <img src={me} className="portrait" alt="portrait of Sasha" />
+      <figure className="portrait" >
+      <img src={me} alt="portrait of Sasha" />
+     </figure>
     </div>
   )
 }
