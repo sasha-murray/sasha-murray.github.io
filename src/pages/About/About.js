@@ -1,4 +1,5 @@
 import React from 'react'
+import me from '../../assets/me.jpeg'
 
 
 export const About = () => {
@@ -13,6 +14,9 @@ export const About = () => {
           </header>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio culpa ad, nulla fuga expedita quia sed tempora ipsa laudantium voluptate rerum possimus accusantium perferendis eveniet ducimus repellendus exercitationem obcaecati sunt!</p>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At inventore quos ut temporibus assumenda consequatur esse quam dicta, quidem eius doloribus aliquid fugit culpa voluptate, ad enim nesciunt minima beatae vel, provident labore accusamus praesentium fuga accusantium! Reiciendis, quae nesciunt.</p>
+          <figure className="portrait" >
+      <img src={me} alt="portrait of Sasha" />
+     </figure>
         </section>
         <br/>
         <section>
