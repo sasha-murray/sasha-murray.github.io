@@ -9,6 +9,9 @@ export const Navbar = () => {
           <NavLink exact to="/" activeClassName="active">Home</NavLink>
         </li>
         <li className="navbar-item">
+          <NavLink to="/projects" activeClassName="active">Projects</NavLink>
+        </li>
+        <li className="navbar-item">
           <NavLink to="/about" activeClassName="active">About</NavLink>
         </li>
       </ul>
