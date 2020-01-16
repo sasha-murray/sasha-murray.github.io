@@ -1,7 +1,6 @@
 import React from 'react'
 import me from '../../assets/me.jpeg'
 
-
 export const About = () => {
   const myAge = () => {
     const birthday = new Date('1996-12-11T06:50:00')
@@ -12,20 +11,18 @@ export const About = () => {
   const nerdLink = 'https://slackprop.wordpress.com/2013/06/03/on-geek-versus-nerd/'
   return (
     <div className="container">
-      <article className="about">
-        <header className="header about">
-          <div>
-            <h1>About Me</h1>
-            <p>My name is Sasha, I'm a {myAge()}-year-old developer and nerd/geek - <a href={nerdLink}> you name it</a></p>
-            <p>With a background in maths, linguistics and logic, coding seemed like the best way to combine my passion for problem-solving with my creative side.</p>
-          </div>
-          <figure className="portrait" >
-            <img src={me} alt="portrait of Sasha" />
-          </figure>
+      <article>
+        <header>
+          <h1>About Me</h1>
+          <p>My name is Sasha, I&#39;m a {myAge()}-year-old developer and nerd/geek - <a href={nerdLink}> you name it</a></p>
+          <p>With a background in maths, linguistics and logic, coding seemed like the best way to combine my passion for problem-solving with my creative side.</p>
         </header>
+        <figure className="portrait" >
+          <img src={me} alt="portrait of Sasha" />
+        </figure>
         <br/>
-        <div className="list about">
-          <header className="header">
+        <div className="skill-list">
+          <header>
             <h2>Skills and Technologies</h2>
           </header>
           <div>
